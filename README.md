@@ -13,18 +13,14 @@ A complete Kafka-based order processing system with Avro serialization, real-tim
 ## Project Structure
 
 kafka-order-system/
-├── docker-compose.yml          # Kafka cluster configuration
-├── requirements.txt            # Python dependencies
-├── schemas/
-│   └── order.avsc             # Avro schema definition
-├── producer/
-│   └── order_producer.py      # Order message producer
-├── consumer/
-│   └── order_consumer.py      # Order message consumer
-├── config/
-│   └── kafka_config.py        # Kafka configuration
-├── create_topics.sh           # Topic creation script
-└── README.md                  # This file
+- docker-compose.yml          # Kafka cluster configuration
+- requirements.txt            # Python dependencies
+- schemas/order.avsc             # Avro schema definition
+- producer/order_producer.py      # Order message producer
+- consumer/order_consumer.py      # Order message consumer
+- config/kafka_config.py        # Kafka configuration
+- create_topics.sh           # Topic creation script
+- README.md                  # This file
 
 ## Prerequisites
 
