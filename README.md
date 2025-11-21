@@ -48,12 +48,14 @@ bashdocker ps
 bashpip install -r requirements.txt
 5. **Create Kafka Topics**
 *On Linux/Mac*:
-bashchmod +x create_topics.sh
+- bashchmod +x create_topics.sh
 ./create_topics.sh
-*On Windows (PowerShell)*:
+
+- *On Windows (PowerShell)*:
 powershelldocker exec kafka kafka-topics --create --topic orders --partitions 3 --replication-factor 1 --bootstrap-server kafka:9092 --if-not-exists
 docker exec kafka kafka-topics --create --topic orders-dlq --partitions 1 --replication-factor 1 --bootstrap-server kafka:9092 --if-not-exists
-**Running the System**
+
+6. **Running the System**
 Start Consumer (Terminal 1)
 bashpython consumer/order_consumer.py
 
